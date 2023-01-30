@@ -138,7 +138,7 @@ Always prints
 
 **[`^        Regresar al inicio        ^`](#otras-herramientas-para-el-manejar-errores)**
 
-El lenguaje go presenta otra manera para manejar los errores similar a la de Rust, en el cual, se espera que las funciones que puedan fallar regresen un puntero de tipo `Error` el cual contendrá el mensaje. Aunque el lenguaje permite ignorarlos utilizando el caracter `_` al momento de asignar el valor, lo propio es tomarlos en cuenta comparandolos con un valor `nil`.
+El lenguaje go presenta otra manera para manejar los errores similar a la de Rust, en el cual, se espera que las funciones que puedan fallar regresen un puntero de tipo `Error` el cual contendrá el mensaje. Aunque el lenguaje permite ignorarlos utilizando el carácter `_` al momento de asignar el valor, lo propio es tomarlos en cuenta comparándolos con un valor `nil`.
 
 ```go
 package main
@@ -190,7 +190,7 @@ Hello world!
 Always prints
 ```
 
-Ejemplo de respuesta faliida
+Ejemplo de respuesta fallida
 
 ```bash
 2023/01/29 19:49:07 Error: open not_found.txt: no such file or directory
@@ -205,7 +205,7 @@ Always prints
 
 **[`^        Regresar al inicio        ^`](#otras-herramientas-para-el-manejar-errores)**
 
-Como ultima forma de manejar los errores, existe la forma de recuperarse de un crasheo inesperado, para esto, se utiliza un programa que sera el encargado de ejecutar el programa que podría fallar y vigilará la ejecución, si el programa llega a tener un error y finaliza su ejecución con un código de salida diferente a `0`, entonces se volverá a ejecutar.
+Como ultima forma de manejar los errores, existe la forma de recuperarse de un crasheo inesperado, para esto, se utiliza un programa que será el encargado de ejecutar el programa que podría fallar y vigilará la ejecución, si el programa llega a tener un error y finaliza su ejecución con un código de salida diferente a `0`, entonces se volverá a ejecutar.
 
 ```go
 package main

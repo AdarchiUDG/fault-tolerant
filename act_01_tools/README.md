@@ -1,6 +1,6 @@
 # Otras herramientas para el manejar errores
 
-En esta práctica se exploraran otras maneras en las que es posible manejar y recuperarse de los errores.
+En esta práctica se explorarán otras maneras en las que es posible manejar y recuperarse de los errores.
 
 ---
 

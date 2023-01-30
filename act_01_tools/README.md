@@ -67,7 +67,7 @@ Always prints
 
 ---
 
-## Either - Rust
+### Either - Rust
 
 **[`^        Regresar al inicio        ^`](#otras-herramientas-para-el-manejar-errores)**
 
@@ -134,7 +134,7 @@ Always prints
 
 ---
 
-## Retorno Explicito - Go
+### Retorno Explicito - Go
 
 **[`^        Regresar al inicio        ^`](#otras-herramientas-para-el-manejar-errores)**
 
@@ -201,7 +201,7 @@ Always prints
 
 <a id="supervision-de-crasheos---go"></a>
 
-## Supervisión de crasheos - Go
+### Supervisión de crasheos - Go
 
 **[`^        Regresar al inicio        ^`](#otras-herramientas-para-el-manejar-errores)**
 

@@ -10,6 +10,14 @@ En esta práctica se realizará una aplicación que sea capaz de ejecutarse como
 
 ---
 
+## Demos
+
+### [Link al supervisor](https://status.dev.cbnao.com/health)
+
+### [Link a la "aplicación"](https://status-app.dev.cbnao.com/)
+
+---
+
 ## Indice
 
 - [Instalación del servicio](#instalación-del-servicio)
@@ -27,10 +35,14 @@ En esta práctica se realizará una aplicación que sea capaz de ejecutarse como
 Para realizar la instalación solo es necesario ejecutar el archivo `install.sh` de la siguiente forma
 
 ```bash
-./install.sh <PUERTO_SUPERVISOR> <PUERTO_APLICACION> [-u <USUARIO>]
+./install.shm [-u <USUARIO>] <PUERTO_SUPERVISOR> <PUERTO_APLICACION> 
 ```
 
+![Instalación](images/systemd-install.png)
+
 ### Supervisor de estatus
+
+**[`^        Regresar al inicio        ^`](#estatus)**
 
 Una vez ejecutado podremos visualizarlo en los puertos que hayamos designado al instalarlo como un servicio, podremos acceder al endpoint `/health` para visualizar el estatus de nuestra aplicación.
 
@@ -99,6 +111,8 @@ public async Task<HealthCheckResult> CheckHealthAsync(HealthCheckContext context
 ```
 
 ### Aplicación de ejemplo
+
+**[`^        Regresar al inicio        ^`](#estatus)**
 
 Para realizar la aplicación de ejemplo se optó por unicamente hacer una aplicación que permita finalizar su propio estado como si este fuera un error, por lo que la pagina solo mostrará un botón para poder `Crashear` el servidor y poder realizar la prueba de que se reinicie
 

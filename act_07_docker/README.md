@@ -12,7 +12,6 @@ Para esta práctica se realizará un ejemplo de una aplicación montada en un co
 
 ## Demos
 
-### [Link a la aplicación](https://docker.dev.cbnao.com/)
 
 ---
 

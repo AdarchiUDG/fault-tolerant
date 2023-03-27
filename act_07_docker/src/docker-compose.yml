@@ -1,0 +1,38 @@
+version: '1.0'
+
+networks:
+  dockerexample-dev:
+    driver: bridge
+
+services:
+  dockerexample:
+    image: dockerexample:latest
+    depends_on:
+      - "postgresimage"
+    build:
+      context: .
+      dockerfile: ./dockerfile
+    ports:
+      - "6500:80/tcp"
+    environment:
+      PORT: "80"
+      CONN_STRING_POSTGRES: "host=postgresimage;port=5432;database=wiki;username=wikiadmin;password=admin"
+    networks:
+      - dockerexample-dev
+
+  postgresimage:
+    image: postgres:latest
+    ports:
+      - "5432/tcp"
+    restart: always
+    volumes:
+      - db_volume:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: wikiadmin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: wiki
+    networks:
+      - dockerexample-dev
+
+volumes:
+  db_volume:
